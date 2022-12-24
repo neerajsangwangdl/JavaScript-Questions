@@ -228,6 +228,16 @@ git push -u origin master ( not permission, you have to go the git website and c
 
 
 
+------------------------------------------------------
+ssh keys steps
+1  ssh-keygen -t ed25519 -C "neerjdownload.com" 
+   + enter + y + enter + enter
+2  eval "$(ssh-agent -s)"
+3  ssh-add ~/.ssh/id_rsa
+4  tail ~/.ssh/id_rsa.pub
+-------------------------------------------------------
+
+
 
 
 
