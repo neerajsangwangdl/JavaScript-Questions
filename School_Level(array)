@@ -1,0 +1,140 @@
+  /* Q1. Find the second largest no in the array
+  
+  <script>
+        const arr = [12, 35, 1, 10, 34, 1];
+        arr.sort(function(a,b){
+        return b-a;
+    });
+
+    console.log(arr[1]);
+        
+    
+    </script>
+
+    -------------------------------------------------------------------
+    <script>
+    let arr = [12, 35, 1, 10, 34, 1]
+    let max = -Infinity;
+  for(let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  
+  console.log(max-1)
+</script>
+
+    -----------------------------------------------------------------------
+    const arr = [12, 35, 1, 10, 34, 1];
+
+    function nextBiggest(arr) {
+  let max = -Infinity, result = -Infinity;
+
+  for (const value of arr) {
+    const nr = Number(value)
+
+    if (nr > max) {
+      [result, max] = [max, nr] // save previous max
+    } else if (nr < max && nr > result) {
+      result = nr; // new second biggest
+    }
+  }
+
+  return result;
+}
+
+
+console.log(nextBiggest(arr));
+    -----------------------------------------------------
+
+    Q 2 
+
+    const arr = [15, 2, 45, 12, 7];
+const pickSameElements = (arr = []) => {
+   const res = [];
+   const { length } = arr;
+   for(let ind = 0; ind < length; ind++){
+      const el = arr[ind];
+      if(el - ind === 1){
+         res.push(el);
+      };
+   };
+   return res;
+};
+console.log(pickSameElements(arr));
+
+------------------------------------------------------------------
+
+Q3 Print alternate elements of an array
+You are given an array A of size N. You 
+need to print elements of A in alternate order (starting from index 0).
+
+<script>
+let arr = [1,2,3,4,5,6,7,8,9,];
+
+function alternate(arr) {
+  for( let i = 0; i < arr.length; i+=2){
+        console.log((i+1) + ':  ' + arr[i])
+  }
+}
+alternate(arr)
+      
+</script>
+
+--------------------------------------------------------------------
+
+Q4 Sum of Series
+Write a program to find the sum of the given series 1+2+3+ . . . . . .(N terms) 
+
+<script>
+
+var total = 0, count = 1;
+while ( count <= 10) {
+total += count;
+count+= 1;
+}
+console.log(total);
+
+</script>
+ ---------------------------------------------------------------------
+
+ Q5 Palindromic Array
+Given a Integer array A[] of n elements. 
+Your task is to complete the function PalinArray. 
+Which will return 1 if 
+all the elements of the Array are palindrome 
+otherwise it will return 0.
+
+let arr = [111, 222, 333, 444, 555,]
+ 
+<script>
+  var string = prompt('Please enter a string');
+  var stringArray = string.split('');
+  var stringArrayRev = stringArray.reverse();
+  var revString = stringArrayRev.join('');
+    if(string==revString){
+      console.log(`${string}: Is Palindrom`);
+      
+    }else{
+      console.log(`${string}: is not Palindrom`)
+    }
+</script>
+-----------------------------------------------------------------------
+Q 6  Arrays (Sum of array)
+let arr = [1,2,3,4]
+
+<script>
+  let arr = [1,2,3,4,];
+  let sum = 0;
+  for(let i = 0; i<arr.length; i++){
+    sum+= arr[i];
+    console.log(sum)
+  }
+</script>
+--------------------------------------------------------------------
+
+Q.7 
+
+
+
+*/
