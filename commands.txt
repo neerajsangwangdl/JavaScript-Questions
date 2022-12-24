@@ -1,0 +1,263 @@
+project 
+first  Download Node and then intall it 
+
+for new project command (ng new) (project name)
+
+for angular cli command is  command npm (install -g @angular/cli)
+angular version  ( ng v   , ng version )
+npm uninstall  ( npm uninstall -g @angular/cli )
+npm uninstall  ( npm cache clean --force )
+for checking node   ( node -v )
+for checking npm    ( npm -v )
+for new project     ( ng new blog)
+to open in vs code   ( code . )
+to run the project   ( ng serve )
+for specific angular version (npm install -g @angular/cli@14.0.3 )
+how to delet node modules   ( npx npkill ) after that press space to delete
+
+-------------------------------------------------------------------------------
+                                  Database
+
+data base   
+ help  ( \s )
+to check database   ( show databases )
+to creat database   ( create database newdb; )
+
+to run backend   ( npm i )
+
+workbench
+Execute the following query in MYSQL Workbench
+
+
+Execute the following query in MYSQL Workbench
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+Where root as your user localhost as your URL and password as your password
+
+Then run this query to refresh privileges:
+
+flush privileges;
+
+vs code me jake server.js ki file me
+const db_config = {
+  host: 'localhost',
+  user: 'root',
+  password: 'Bittoooo1@',
+  database: "yantra-aws",
+  multipleStatements: true
+-------------------------------------------------------------------------
+npm run dev
+npm i
+npm i typescript@4.7.4
+npm cache clean --force
+git reflog
+git fetch --all
+git reflog show head
+git reflog show --all
+git clone git@github.com:yantracompany/frontend.git
+
+( last line se start karna aur npm run dev command last hogi )
+
+--------------------------------------------------------------------------------
+
+
+Git Tutorial
+
+git config --global user.name "Neeraj"     ( for configuring the name)
+
+git config --global user.name "neerajsangwandl@gmail.com" (for configuring the mail)
+
+video no. 4
+
+git status ( to check the status )
+
+To make a repository there are commands
+
+git init
+
+git status ( to check how much files in ur folder )
+
+git add --a ( to add all files to staging area)
+
+git status ( to check how many files in staging area)
+
+git commit -m "Initial Commit"   ( your commit has been committed)
+
+git status ( nothing to commit, working tree clean)
+
+git log ( to check who committed in the repository )
+
+git add second.txt  ( to add a specific file into staging area)
+
+git add command.txt ( to add another file into staging area)
+
+git commit -m "second change"
+
+-----------------------------------------------------------------------------------
+Video  #5 ( Cloning a Remote Git Repository from GitHub | Git Tutorial # 5
+
+rm -rf .git ( to delete repository )
+
+git clone   ( to clone the repository)
+
+pwd     ( present working directory)
+
+ls 	   ( to list content)
+
+cd      ( change directory)
+
+----------------------------------------------------------------------------
+
+#6
+
+untracked --> unmodified --> modified --> staged
+
+-------------------------------------------------------------------------------
+
+#7  .gitignore: Ignoring Files in Git | Git Tutorials #7
+
+touch .gitignore ( In this file u can write file name to ignore from the project)
+
+touch error.log  
+
+git rm --cached dir/ ( file ko untrack karega )( file ko delete dikhyega par delete nahi krega
+
+
+*.log ( all log files ignore)
+dir/  ( dir folder ignore)
+
+-----------------------------------------------------------------------------------
+
+# 8 Git Diff: Showing Changes Between Commits/Staging Area & Working Directory | 
+
+git diff ( compare the file staging area to working directory se)
+
+git diff --staged ( aapke pichle comments se ab tak ke staging area ko )
+
+-------------------------------------------------------------------------------------
+
+#9 Skipping The Staging Area | Git Turorials
+
+git commit -a -m "Direct Commit"
+
+git log  ( to show all commits)
+
+q   ( this key edit again the pager )
+
+-------------------------------------------------------------------------------------
+
+# 10  Moving and Renaming Files In Git 
+
+git rm delte.txt ( this command delete the file )
+
+git commit -m "delete.txt file"
+
+get status
+
+git mv first.txt first_renamed.txt
+
+git rm --cached dir/ ( file ko untrack karega )( file ko delete dikhyega par delete nahi krega
+
+------------------------------------------------------------------------------------------------
+
+# 11 Git Log: Viewing & Changing Commits In Git 
+
+git clone git clone git@github.com:yantracompany/frontend.git frontend  ( frotend ke folder me clone hogi)
+
+
+git log  ( to see comments)
+
+git log -p  ( what is remove with comments)
+
+git log -p -2 ( it will show last 2 comments with difference)
+
+git log --stat ( it shows insertion and deletion)
+
+git log --pretty=oneline ( all comments in one line )
+
+git log --pretty=short ( latest comments in short lines )
+
+Author means ( who made the file )
+commentator  ( who comments in the file )
+
+git log --since=2.days (last 2 days work)
+
+git log --since=2.weeks ( last 2 weeks)
+
+git log --since=2.months ( for last 2 months and so on years too)
+
+git log --pretty=format:  ( search in chrome " git scm useful options for log format" 
+                          ( this is the website " https://git-scm.com/docs/git-log "
+                          
+git commit --amend     ( to change commit )
+
+------------------------------------------------------------------------------------------
+
+# 12 Unstaging & Unmodifying Files In Git 
+
+git add 'file name' ( file will go to staging area)
+
+git restore --staged 'file name' ( file back to the unstage)
+
+git checkout --'file name' ( restore the file previous stage)
+
+git checkout -f ( all files back to the previous stage)
+
+----------------------------------------------------------------------------------
+
+# 13 Git Remote
+
+git remote ( send  file to the git website )
+            ( make repository in git website)
+
+git remote add origin git@github.com:neerajsangwangdl/GitTutorial.git
+
+git remote ( type it )
+
+origin ( it will be shown) 
+
+git remote -v (it wil be shown
+               origin  git@github.com:neerajsangwangdl/GitTutorial.git (fetch)
+               origin  git@github.com:neerajsangwangdl/GitTutorial.git (push)
+
+
+git push -u origin master ( not permission, you have to go the git website and click 
+				   ( setting--SSH and GPG keys  for key have to write ssh keys github on google
+				  (  
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
